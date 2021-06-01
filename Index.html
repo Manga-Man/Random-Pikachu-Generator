@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<title>
+  Random pikachu Generator
+</title>
+<div>
+<script>
+  let pikachuIsElectricType = true;
+var pikachu
+var yn = ["No","Yes"];
+var Shiny = yn[Math.floor(Math.random() * yn.length)];
+var Nature = ["Grumpy", "Brave", "Shy", "Freindly"];
+var Nr = Nature[Math.floor(Math.random() * Nature.length)];
+var shiny = ['yes', 'no'];
+var fm = ["Female", "Male" ]
+var Gender = fm[Math.floor(Math.random() * fm.length)];
+let pikachuIsRockType = false;
+if (pikachuIsElectricType === true) {
+  document.write(`Pikachu`);
+  document.write("<br>");
+  document.write(`IV: `);
+  document.write(Math.floor(Math.random() * 100))
+  document.write("<br>");
+  document.write(`Level: `)
+  document.write(Math.floor(Math.random() * 100))
+  document.write("<br>");
+  document.write(`Shiny?`)
+  document.write("<br>");
+  document.write(Shiny)
+  document.write("<br>");
+  document.write(`HP: `)
+  document.write(Math.floor(Math.random() * 100))
+  document.write("<br>");
+  document.write(`Type: Electric`)
+  document.write("<br>");
+  document.write(`Item Held: None`)
+  document.write("<br>");
+  document.write(`Gender: `)
+  document.write(Gender)
+
+}
+
+</script>
+<p id="nick">Nickname: </p><p id="nick" contenteditable="true">(tap to edit)</p>
+<img src="pika.gif" id="pi">
+<a href="https://github.com/Manga-Man/Random-Pikachu-Generator.git">
+  <img src="github.png" id="git" height="60" width="60">
+</a>
+</div>
+
+<style>
+  div {
+    margin: 40px;
+    padding: 80px;
+    background-color: #4040bf;
+    height: 250px;
+    width: 140px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    background-color: #400080;
+  }
+  
+  
+  p {
+    text-align: left;
+  }
+  
+  
+  #git {
+    position: absolute;
+   bottom: 0;
+   right: 0;
+  }
+  
+  
+  #nick {
+    background-color: #4040bf;
+    text-align: center;
+  }
+  
+  
+  
+  #pi {
+    background-color: #4040bf;
+  }
+</style>
