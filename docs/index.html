@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<title>
+  Random pikachu Generator
+</title>
+<div id="main">
+<script>
+  let pikachuIsElectricType = true;
+var pikachu
+var yn = ["No","Yes"];
+var Shiny = yn[Math.floor(Math.random() * yn.length)];
+var Nature = ["Grumpy", "Brave", "Shy", "Freindly"];
+var Nr = Nature[Math.floor(Math.random() * Nature.length)];
+var shiny = ['yes', 'no'];
+var fm = ["Female", "Male" ]
+var Gender = fm[Math.floor(Math.random() * fm.length)];
+let pikachuIsRockType = false;
+if (pikachuIsElectricType === true) {
+  document.write(`Pikachu`);
+  document.write("<br>");
+  document.write(`IV: `);
+  document.write(Math.floor(Math.random() * 100))
+  document.write("<br>");
+  document.write(`Level: `)
+  document.write(Math.floor(Math.random() * 100))
+  document.write("<br>");
+  document.write(`Shiny?`)
+  document.write("<br>");
+  document.write(Shiny)
+  document.write("<br>");
+  document.write(`HP: `)
+  document.write(Math.floor(Math.random() * 100))
+  document.write("<br>");
+  document.write(`Type: Electric`)
+  document.write("<br>");
+  document.write(`Item Held: None`)
+  document.write("<br>");
+  document.write(`Gender: `)
+  document.write(Gender)
+
+}
+
+</script>
+<p id="nick">Nickname: </p><p id="nick" contenteditable="true">(tap to edit)</p>
+<script>
+   var mv1 = ["Thunderbolt", "Swift"]
+   var move1 = mv1[Math.floor(Math.random() * mv1.length)]
+   var mv2 = ["Quick-Attack", "Iron-Tail"]
+   var move2 = mv2[Math.floor(Math.random() * mv2.length)]
+   document.write("<br>");
+   document.write(`Moves:`);
+   document.write("<br>");
+   document.write(`1. ${move1} PP 15/15`)
+   document.write("<br>");
+   document.write(`2. ${move2} PP 15/15`)
+   
+</script>
+<img src="pika.gif" id="pi">
+</div>
+<div>
+  <p id="pgit">Made with &#128420; by Manga-Man | 2021 <a id="gitlink" href="https://github.com/Manga-Man/Random-Pikachu-Generator.git">GitHub</a></p>
+</div>
+<style>
+  #main {
+    margin: 40px;
+    padding: 80px;
+    background-color: #4040bf;
+    height: 340px;
+    width: 200px;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    background-color: #400080;
+  }
+  
+  
+  p {
+    text-align: left;
+  }
+  
+  
+  #git {
+    position: absolute;
+   bottom: 0;
+   right: 0;
+  }
+  
+  
+  #nick {
+    background-color: #4040bf;
+    text-align: center;
+  }
+  
+  
+  
+  #pi {
+    background-color: #4040bf;
+  }
+  
+  #pgit {
+    color: black;
+    position:absolute; 
+    bottom:0px;
+    text-align: center;
+    background-color: #400080;
+  }
+  
+  #gitlink {
+    color: black;
+    text-align: center;
+    background-color: #400080;
+   
+    
+  }
+</style>
