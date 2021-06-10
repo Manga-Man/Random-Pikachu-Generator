@@ -7,6 +7,7 @@
   let pikachuIsElectricType = true;
 var pikachu
 var yn = ["No","Yes"];
+var num = [Math.floor(Math.random() * 10 + 1)];
 var Shiny = yn[Math.floor(Math.random() * yn.length)];
 var Nature = ["Grumpy", "Brave", "Shy", "Freindly"];
 var Nr = Nature[Math.floor(Math.random() * Nature.length)];
@@ -25,7 +26,12 @@ if (pikachuIsElectricType === true) {
   document.write("<br>");
   document.write(`Shiny?`)
   document.write("<br>");
-  document.write(Shiny)
+  if (num < 8) {
+  document.write('Yes')
+  }
+  else {
+  document.write('No')
+  }
   document.write("<br>");
   document.write(`HP: `)
   document.write(Math.floor(Math.random() * 100))
